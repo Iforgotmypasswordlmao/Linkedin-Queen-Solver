@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/style.css">
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+        <script>
+            var Solution = {{ solution|tojson }}
+        </script>
+    </head>
+    <body>
+        <canvas id="canvas" width="700" height="700"></canvas>
+        <script src={{ url_for('static', filename='solution.js') }} type="module"></script>
+    </body>
+</html>
